@@ -1,0 +1,19 @@
+{
+  "name" : "quack/itau",
+  "description" : "Módulo de pagamento pelo Itaú Shopline, para Magento.",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "homepage": "https://github.com/rafaelpatro/Quack_Itau",
+  "version" : "1.0.0",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors":[{
+    "name": "Rafael Patro",
+    "email": "rafaelpatro@gmail.com"
+  }],
+  "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packagist.org/"
+  } ]
+}

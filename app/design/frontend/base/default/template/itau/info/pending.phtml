@@ -1,0 +1,38 @@
+<?php
+/**
+ * Este arquivo é parte do programa Quack Itaú
+ *
+ * Quack Itaú é um software livre; você pode redistribuí-lo e/ou
+ * modificá-lo dentro dos termos da Licença Pública Geral GNU como
+ * publicada pela Fundação do Software Livre (FSF); na versão 3 da
+ * Licença, ou (na sua opinião) qualquer versão.
+ *
+ * Este programa é distribuído na esperança de que possa ser  útil,
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO
+ * a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
+ * Licença Pública Geral GNU para maiores detalhes.
+ *
+ * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto
+ * com este programa, Se não, veja <http://www.gnu.org/licenses/>.
+ *
+ * @category   Quack
+ * @package    Quack_Itau
+ * @author     Rafael Patro <rafaelpatro@gmail.com>
+ * @copyright  Copyright (c) 2015 Rafael Patro (rafaelpatro@gmail.com)
+ * @license    http://www.gnu.org/licenses/gpl.txt
+ * @link       https://github.com/rafaelpatro/Quack_Itau
+ */
+?>
+<?php
+/**
+ * @var $this Quack_Itau_Block_Info
+ */
+?>
+<br />
+<button type="submit" title="<?php echo Mage::helper('itau')->__('Pagar Online no Itaú') ?>" class="button" onclick="window.open('<?php echo $this->getShoplineurl() ?>')"><span><span><?php echo Mage::helper('itau')->__('Pagar Online no Itaú') ?></span></span></button>
+<?php if ($this->getAllowbanktransfer()): ?>
+<br />ou<br />
+<button type="submit" title="Pagar no Caixa" class="button" onclick="window.open('<?php echo Mage::helper('cms/page')->getPageUrl( $this->getCmsbanktransferpage() ) ?>')"><span><span>Pagar no Caixa (ver dados banc&aacute;rios)</span></span></button>
+<?php endif; ?>
+<br />
+<i><?php echo Mage::helper('itau')->__('Se já realizou o pagamento, aguarde a compensação. Você receberá uma confirmação em breve.') ?></i>

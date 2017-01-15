@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Este arquivo é parte do programa Quack Itaú
+ *
+ * Quack Itaú é um software livre; você pode redistribuí-lo e/ou 
+ * modificá-lo dentro dos termos da Licença Pública Geral GNU como 
+ * publicada pela Fundação do Software Livre (FSF); na versão 3 da 
+ * Licença, ou (na sua opinião) qualquer versão.
+ *
+ * Este programa é distribuído na esperança de que possa ser  útil, 
+ * mas SEM NENHUMA GARANTIA; sem uma garantia implícita de ADEQUAÇÃO
+ * a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR. Veja a
+ * Licença Pública Geral GNU para maiores detalhes.
+ *
+ * Você deve ter recebido uma cópia da Licença Pública Geral GNU junto
+ * com este programa, Se não, veja <http://www.gnu.org/licenses/>.
+ *
+ * @category   Quack
+ * @package    Quack_Itau
+ * @author     Rafael Patro <rafaelpatro@gmail.com>
+ * @copyright  Copyright (c) 2017 Rafael Patro (rafaelpatro@gmail.com)
+ * @license    http://www.gnu.org/licenses/gpl.txt
+ * @link       https://github.com/rafaelpatro/Quack_Itau
+ */ 
+-->
+<config>
+	<sections>
+		<payment>
+			<groups>
+				<itau_standard translate="label" module="itau">
+					<label>ItauShopline</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>0</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>0</show_in_store>
+					<fields>
+						<active translate="label">
+							<label>Habilitado</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</active>
+						<title translate="label">
+							<label>Título</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</title>
+						<order_status translate="label">
+							<label>Status dos novos pedidos</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_order_status_new
+							</source_model>
+							<sort_order>30</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</order_status>
+						<chave translate="label">
+							<label>Chave</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+							<comment>Utilizar somente caracteres maiúsculos.</comment>
+						</chave>
+						<retorno translate="label">
+							<label>URL de Retorno</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>60</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</retorno>
+						<obs1 translate="label">
+							<label>Obs - Linha 1</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>70</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</obs1>
+						<obs2 translate="label">
+							<label>Obs - Linha 2</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>80</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</obs2>
+						<obs3 translate="label">
+							<label>Obs - Linha 3</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>90</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</obs3>
+						<tp_obs translate="label">
+							<label>Tipo Obs</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>110</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</tp_obs>
+						<dias_vencimento translate="label">
+							<label>Dias para Vencimento</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>120</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+						</dias_vencimento>
+						<codigo_loja translate="label">
+							<label>Codigo Loja</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>130</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+							<comment>Utilizar somente caracteres maiúsculos.</comment>
+						</codigo_loja>
+                        <allowredirect translate="label">
+                            <label>Redirecionar para o banco ao finalizar o pedido</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Opção para redirecionar o cliente ao ambiente do banco, imediatamente ao concluir a compra. Caso contrário o cliente irá para a página de sucesso, com as orientações de pagamento.</comment>
+                        </allowredirect>
+                        <allowbanktransfer translate="label">
+                            <label>Permitir Depósito em Caixa</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>145</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Exibe opção de pagamento via depósito/transferência em caixa.</comment>
+                        </allowbanktransfer>
+                        <cms_banktransfer_page translate="label">
+                            <label>CMS Página de Instruções</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_cms_page</source_model>
+                            <sort_order>146</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Página CMS que contém intruções para depósito/transferência em caixa.</comment>
+                            <depends>
+                            	<allowbanktransfer separator=",">1</allowbanktransfer>
+                            </depends>
+                        </cms_banktransfer_page>
+						<allowspecific translate="label">
+							<label>Tipos de Países Permitidos</label>
+							<frontend_type>allowspecific</frontend_type>
+							<sort_order>150</sort_order>
+							<source_model>adminhtml/system_config_source_payment_allspecificcountries
+							</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</allowspecific>
+						<specificcountry translate="label">
+							<label>Permitir Pagamento de Países Específicos</label>
+							<frontend_type>multiselect</frontend_type>
+							<sort_order>160</sort_order>
+							<source_model>adminhtml/system_config_source_country
+							</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</specificcountry>
+						<sort_order translate="label">
+							<label>Sort order</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>170</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</sort_order>
+					</fields>
+				</itau_standard>
+			</groups>
+		</payment>
+	</sections>
+</config>
