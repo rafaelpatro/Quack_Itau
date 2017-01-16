@@ -4,6 +4,11 @@ Desenvolvido a partir do manual de orientações técnicas, fornecido pelo Itaú
 
 [![Build Status](https://travis-ci.org/rafaelpatro/Quack_Itau.svg?style=flat)](https://travis-ci.org/rafaelpatro/Quack_Itau)
 
+## Veja também outras integrações
+ - [Bradesco](https://github.com/rafaelpatro/Quack_Bradesco)
+ - [Banco do Brasil](https://github.com/rafaelpatro/Quack_BB)
+ - [Cielo](https://github.com/rafaelpatro/Quack_Cielo)
+ 
 ## Benefícios
  - Receber pagamentos de forma automática, sem necessidade de confirmação manual.
  - Livre de intermediários, ou gateways de pagamentos.
