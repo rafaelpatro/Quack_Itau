@@ -15,6 +15,7 @@ Magento 1.4.x - 1.9.x
 ## Requisitos
  - Ser cliente Itaú
  - Aderir ao regulamento do comércio eletrônico do Itaú
+ - Java Runtime Environment (JRE ou JDK)
 
 ## Introdução
 Esta extensão tem por objetivo gerenciar pagamentos realizados através do convênio de comércio eletrônico do Itaú.
