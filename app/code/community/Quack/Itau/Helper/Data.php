@@ -81,6 +81,7 @@ class Quack_Itau_Helper_Data extends Mage_Core_Helper_Abstract {
 	 */
 	public function decrypt($dados, $chave) {
 		$chave = strtoupper($chave);
+		$classpath = Mage::getBaseDir('lib') . "/Java";
 		$java = "java -classpath {$classpath} Decripto '{$dados}' '{$chave}'";
 		exec($java, $DC);
 		return array(
