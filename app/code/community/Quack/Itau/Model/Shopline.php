@@ -184,7 +184,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$NomeSacado
 	 */
 	public function setNomeSacado($NomeSacado) {
-		$this->NomeSacado = $NomeSacado;
+		$this->NomeSacado = Mage::helper('core')->removeAccents($NomeSacado);
 		return $this;
 	}
 	
@@ -238,7 +238,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$EnderecoSacado
 	 */
 	public function setEnderecoSacado($EnderecoSacado) {
-		$this->EnderecoSacado = $EnderecoSacado;
+		$this->EnderecoSacado = Mage::helper('core')->removeAccents($EnderecoSacado);
 		return $this;
 	}
 	
@@ -256,7 +256,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$BairroSacado
 	 */
 	public function setBairroSacado($BairroSacado) {
-		$this->BairroSacado = $BairroSacado;
+		$this->BairroSacado = Mage::helper('core')->removeAccents($BairroSacado);
 		return $this;
 	}
 	
@@ -292,7 +292,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$CidadeSacado
 	 */
 	public function setCidadeSacado($CidadeSacado) {
-		$this->CidadeSacado = $CidadeSacado;
+		$this->CidadeSacado = Mage::helper('core')->removeAccents($CidadeSacado);
 		return $this;
 	}
 	
@@ -310,7 +310,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$EstadoSacado
 	 */
 	public function setEstadoSacado($EstadoSacado) {
-		$this->EstadoSacado = $EstadoSacado;
+		$this->EstadoSacado = Mage::helper('core')->removeAccents($EstadoSacado);
 		return $this;
 	}
 	
@@ -364,7 +364,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$ObsAdicional1
 	 */
 	public function setObsAdicional1($ObsAdicional1) {
-		$this->ObsAdicional1 = $ObsAdicional1;
+		$this->ObsAdicional1 = Mage::helper('core')->removeAccents($ObsAdicional1);
 		return $this;
 	}
 	
@@ -382,7 +382,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$ObsAdicional2
 	 */
 	public function setObsAdicional2($ObsAdicional2) {
-		$this->ObsAdicional2 = $ObsAdicional2;
+		$this->ObsAdicional2 = Mage::helper('core')->removeAccents($ObsAdicional2);
 		return $this;
 	}
 	
@@ -400,7 +400,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$ObsAdicional3
 	 */
 	public function setObsAdicional3($ObsAdicional3) {
-		$this->ObsAdicional3 = $ObsAdicional3;
+		$this->ObsAdicional3 = Mage::helper('core')->removeAccents($ObsAdicional3);
 		return $this;
 	}
 	
@@ -418,7 +418,7 @@ class Quack_Itau_Model_Shopline extends Varien_Object {
 	 *        	$Observacao
 	 */
 	public function setObservacao($Observacao) {
-		$this->Observacao = $Observacao;
+		$this->Observacao = Mage::helper('core')->removeAccents($Observacao);
 		return $this;
 	}
 	
